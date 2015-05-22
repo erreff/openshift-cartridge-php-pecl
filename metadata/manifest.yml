@@ -3,7 +3,7 @@ Name: pecl
 Cartridge-Short-Name: PECL
 Architecture: x86_64
 Display-Name: pecl 1.0
-Description: PHP 5.4 PECL extensions cartridge
+Description: PHP 5.x PECL extensions cartridge
 Version: '1.0'
 Versions:
 - '1.0'
