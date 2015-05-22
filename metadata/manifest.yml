@@ -1,0 +1,28 @@
+---
+Name: pecl
+Cartridge-Short-Name: PECL
+Architecture: x86_64
+Display-Name: pecl 1.0
+Description: PHP 5.4 PECL extensions cartridge
+Version: '1.0'
+Versions:
+- '1.0'
+Cartridge-Version: 0.0.1
+Cartridge-Vendor: erreff
+License: GPL
+Vendor: erreff
+Categories:
+- service
+- embedded
+Website: http://www.openshift.com
+Provides:
+- pecl
+Scaling:
+  Min: 1
+  Max: -1
+Group-Overrides:
+- components:
+  - pecl-1.0
+  - web_framework
+
+Source-Url: https://github.com/erreff/openshift-cartridge-oracle-saas.git

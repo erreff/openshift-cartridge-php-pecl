@@ -1,0 +1,25 @@
+#!/bin/bash -e
+
+source $OPENSHIFT_CARTRIDGE_SDK_BASH
+
+mkdir -p ${OPENSHIFT_PECL_DIR}run
+mkdir -p ${OPENSHIFT_PECL_DIR}log
+mkdir -p ${OPENSHIFT_PECL_DIR}var/events
+mkdir -p ${OPENSHIFT_PECL_DIR}lib64
+
+#
+# Copy binaries extensions
+#
+cp  ${OPENSHIFT_PECL_DIR}archives/*.so ${OPENSHIFT_PECL_DIR}lib64
+
+
+#
+# set LD_LIBRARY_PATH
+#
+tldpath=${OPENSHIFT_PECL_DIR}lib64
+set_env_var 'OPENSHIFT_PECL_LD_LIBRARY_PATH_ELEMENT' "${OPENSHIFT_PECL_DIR}lib64" ${OPENSHIFT_PECL_DIR}/env
+export LD_LIBRARY_PATH=$tldpath
+
+
+client_result "PHP 5.4 PECL Extensions has been added to your applicaiton."
+client_result ""

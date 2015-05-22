@@ -1,0 +1,12 @@
+---
+locked_files:
+- bin/
+- bin/*
+- env/
+- metadata/
+- metadata/*
+- lib/*
+- conf/
+- conf/*
+- hooks/
+- hooks/*
