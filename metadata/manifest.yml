@@ -25,4 +25,4 @@ Group-Overrides:
   - pecl-1.0
   - web_framework
 
-Source-Url: https://github.com/erreff/openshift-cartridge-oracle-saas.git
+Source-Url: https://github.com/erreff/openshift-cartridge-php-pecl.git
